@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %} XKCD PassPhraseGenerator {% endblock %}
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+-->
+{% block content %}
+{{ super() }}
+
+<table>
+    {% for i in lst %}
+      <li> {{ i }} </li>
+    {% endfor %}
+  </table>
+{% endblock %}
+<!--
+</body>
+</html>
+-->
+
+<!--  
+ 
+Okay, what do I need to get done here. I need to add the bootstrap template.
+
+
+
+bootstrap - copy and paste a base thing from my old todo thang. 
+          - find out what the super command is to inherit from another base. (up a dir)
+
+
+subs and capitalizations:
+   Figure out better algorithm for making substitutions. Maybe not use break. While loop?
+
+
+
+
+-->

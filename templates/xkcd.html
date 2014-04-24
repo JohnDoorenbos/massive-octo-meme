@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %} XKCD PassPhraseGenerator {% endblock %}
+
+
+
+
+
+
+<!--
+
+<!DOCTYPE html>
+<head>
+   <title>XKCD Passphrase Generator</title>
+   
+</head>
+<body> -->
+{% block content %}
+{{ super() }}
+
+<div class="box col-xs-12 col-sm-12 col-md-12">
+  <h1>This is a fancy shamncy little passphrase generator! Start by filling out the form, listing things such as the longest you'd like each individual word to be, or what letter for number substitutions you'd like to make! It's pretty simple!<h1>
+</div>
+
+
+
+<div id="numEntry" class="box col-xs-12 col-sm-6 col-md-3" >
+   <form action="display" method="GET" accept-charset="utf-8">
+     <label>Longest Word: </label><input type="input" name="maxWord" /><br />
+     <label>Shortest Word: </label><input type="input" name="minWord" /><br />
+     <label>Max Passphrase Length: </label><input type="input" name="maxPhrase" /><br />
+     <input type="checkbox" name="optimize" value="True" /><label>Optimized Typing Speed</label><br />
+</div>
+     <div id="substitutions" class="box col-xs-12 col-sm-6 col-md-3" >
+       <p>Select any substitutions you would like to make.</p> <br />
+       <input type="checkbox" name="suba" value="4" /><label>a = 4</label> <br />
+       <input type="checkbox" name="sube" value="3" /><label>e = 3</label> <br />
+       <input type="checkbox" name="subi" value="1" /><label>i = 1</label> <br />
+       <input type="checkbox" name="subo" value="0" /><label>o = 0</label> <br />
+       <input type="checkbox" name="subs" value="5" /><label>s = 5</label> <br />
+     </div>
+     <!-- /substitutions -->
+     <div id="capitalizations" class="box col-xs-12 col-sm-6 col-md-3" >
+       <p>Select the words you wish to have capitalized</p> <br />
+       <input type="checkbox" name="cap0" value="0" /><label>First</label> <br />
+       <input type="checkbox" name="cap1" value="1" /><label>Second</label> <br />
+       <input type="checkbox" name="cap2" value="2" /><label>Third</label> <br />
+       <input type="checkbox" name="cap3" value="3" /><label>Fourth</label> <br />
+
+       <input type="submit" value="Submit" />
+     </div>
+     <!-- /capitalizations -->
+
+{% endblock %}     
+<!--</body>
+</html> -->
